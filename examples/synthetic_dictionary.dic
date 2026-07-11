@@ -1,0 +1,5 @@
+variable|label|type|allowed_values
+case_id|Synthetic record identifier|string|
+diagnosis_year|Year of diagnosis|integer|2000-2026
+sex|Sex at diagnosis|integer|1,2
+stage_group|Stage group|string|I,II,III,IV

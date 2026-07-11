@@ -1,0 +1,4 @@
+case_id|diagnosis_year|sex|stage_group
+SYN0001|2018|1|I
+SYN0002|2019|2|II
+SYN0003|2020|1|

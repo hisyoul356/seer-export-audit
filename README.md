@@ -55,6 +55,15 @@ python -m seer_export_audit audit --data examples/synthetic_export.txt --output 
 The dictionary is a UTF-8 delimited text file with a header row. Only
 `variable` is required. `label`, `type`, and `allowed_values` are optional.
 
+### Important: native `.dic` files
+
+This tool does **not** directly parse every native or vendor-specific
+SEER*Stat `.dic` file. Before auditing, export or convert the relevant field
+definitions into the simple delimited format described below. The conversion
+file must have a `variable` header; it may use comma, tab, pipe, or semicolon
+as its delimiter. This limitation is intentional and keeps the audit contract
+transparent and reviewable.
+
 ```text
 variable|label|type|allowed_values
 diagnosis_year|Year of diagnosis|integer|2000-2026

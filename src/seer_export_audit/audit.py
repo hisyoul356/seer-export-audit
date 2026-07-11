@@ -70,7 +70,7 @@ def audit_export(data_path: Path, dictionary_path: Path | None = None) -> dict[s
         }
 
     report: dict[str, Any] = {
-        "tool_version": "0.1.0",
+        "tool_version": "0.1.1",
         "data_file": data_path.name,
         "data_delimiter": delimiter,
         "row_count": len(rows),

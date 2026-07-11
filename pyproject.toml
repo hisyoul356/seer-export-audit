@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seer-export-audit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Privacy-conscious quality control for delimited registry exports and data dictionaries."
 readme = "README.md"
 requires-python = ">=3.10"

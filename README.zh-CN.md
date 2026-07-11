@@ -24,6 +24,10 @@ seer-export-audit audit \
 
 使用 UTF-8 编码的逗号、制表符、竖线或分号分隔文件。首行必须有 `variable`；可选列为 `label`、`type`、`allowed_values`。
 
+### 重要说明：原生 `.dic` 文件
+
+本工具**不能直接解析所有**原生或厂商特有的 SEER*Stat `.dic` 文件。审计前，请先将需要核对的字段定义导出或转换为下述通用分隔文本格式；转换文件首行必须包含 `variable`，分隔符可为逗号、制表符、竖线或分号。本限制是有意保留的，以确保审计输入格式透明、可复核。
+
 ```text
 variable|label|type|allowed_values
 diagnosis_year|诊断年份|integer|2000-2026
